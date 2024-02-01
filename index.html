@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Mwenda Kanyi | Notifications page</title>
+  <script src="index.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <!-- header containing notification count -->
+      <div class="wrapper__header">
+        <div class="wrapper__header-count">
+          <h1>Notifications</h1>
+          <span class="notification-count">3</span>
+        </div>
+        <div class="wrapper__header-right">
+          <span class="accent-grey marker" onclick="markRead()">Mark all as read</span>
+        </div>
+      </div>
+
+      <!-- wrapper body containing the notifications -->
+      <div class="wrapper__body">
+        <!-- unread notifications -->
+        <div class="notification unread">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-mark-webber.webp" alt="profile photo of mark webber">
+          </div>
+          <div class="notification__content">
+            <div>
+              <p class="accent-grey"><span class="accent-bold">Mark Webber</span> reacted to your recent post <span class="accent-darkgrey">My first tournament today!</span></p>
+              <div class="red-dot"></div>
+            </div>
+
+            <p class="time accent-grey">1m ago</p>
+          </div>
+        </div>
+
+        <div class="notification unread">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-angela-gray.webp" alt="profile photo of angela-gray">
+          </div>
+          <div class="notification__content">
+            <div>
+              <p class="accent-grey"><span class="accent-bold">Angela Gray</span> followed you </p>
+              <div class="red-dot"></div>
+            </div>
+
+            <p class="time accent-grey">5m ago</p>
+          </div>
+        </div>
+
+        <div class="notification unread">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="profile photo of jacob thompson">
+          </div>
+          <div class="notification__content">
+            <div>
+              <p class="accent-grey"><span class="accent-bold">Jacob Thompson</span> has joined your group <span class="accent-blue">Chess Club</span></p>
+              <div class="red-dot"></div>
+            </div>
+            <p class="time accent-grey">1day ago</p>
+          </div>
+        </div>
+
+        <!-- read notifications -->
+        <div class="notification">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="profile photo of Rizky">
+          </div>
+          <div class="notification__content">
+            <p class="accent-grey"><span class="accent-bold">Rizky Hasanuddin</span> sent you a private message </p>
+            <p class="time accent-grey">5days ago</p>
+            <div class="message">
+              <p class="message__text">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="notification">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="profile photo of kimberly smith">
+          </div>
+          <div class="notification__content">
+            <p class="accent-grey"><span class="accent-bold">Kimberly Smith</span> commented on your picture </p>
+            <p class="time accent-grey">1week ago</p>
+          </div>
+          <div class="notification__picture">
+            <img src="assets/images/image-chess.webp" alt="a post">
+          </div>
+        </div>
+
+
+        <div class="notification">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="profile photo of nathan peterson">
+          </div>
+          <div class="notification__content">
+            <p class="accent-grey"><span class="accent-bold">Nathan Peterson</span> reacted to your recent post <span class="accent-darkgrey"> 5 end-game strategies to increase your win rate</span></p>
+            <p class="time accent-grey">2weeks ago</p>
+          </div>
+        </div>
+
+
+        <div class="notification">
+          <div class="notification__photo">
+            <img src="assets/images/avatar-anna-kim.webp" alt="profile photo of anna kim">
+          </div>
+          <div class="notification__content">
+            <p class="accent-grey"><span class="accent-bold">Anna Kim</span> left the group <span class="accent-blue">Chess Club</span></p>
+            <p class="time accent-grey">2weeks ago</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kanyijr">Mwenda Kanyi</a>.
+  </div>
+</body>
+</html>

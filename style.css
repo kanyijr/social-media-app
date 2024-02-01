@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+
+:root{
+    --blue-800: hsl(224, 82%, 33%);
+    --greyblue-100: hsl(210, 60%, 98%);
+    --greyblue-200: hsl(211, 68%, 94%); 
+    --greyblue-300:  hsl(205, 33%, 90%);
+    --greyblue-400: hsl(219, 14%, 63%);
+    --greyblue-500: hsl(219, 12%, 42%);
+    --gray-200:hsl(0, 0%, 90%);
+    --gray-400:hsl(0, 0%, 35%);
+    --gray-600:hsl(0, 0%, 30%)
+}
+
+
+
+/* boilerplay layout styles */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5em 1em;
+}
+p{
+    font-weight: 500;
+}
+
+/* typography */
+.accent-grey{
+    font-weight: 500;
+    color: var(--gray-400);
+    opacity: .9;
+}
+.marker:hover, .marker:focus{
+    cursor: pointer;
+    font-weight: 800;
+}
+.accent-blue{
+    color: var(--blue-800);
+    font-weight: 800;
+    
+}
+
+.accent-blue:hover{
+    cursor: pointer;
+}
+.accent-darkgrey{
+    font-weight: 800;
+    color: var(--gray-600);
+}
+.accent-darkgrey:hover, .accent-darkgrey:focus, .accent-bold:hover,
+.accent-bold:focus{
+    color: var(--blue-800);
+    cursor: pointer;
+}
+.accent-bold{
+    color: black;
+    font-weight: 800;
+    opacity: 1;
+}
+
+
+
+/* specific styling */
+
+.wrapper__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.wrapper__header-count{
+    display: flex;
+    align-items: center;
+    gap:1em
+}
+.wrapper__header-count h1{
+    font-size: 1.5rem;
+}
+.notification-count{
+    background-color: var(--blue-800);
+    color: white;
+    padding: .1em .7em;
+    border-radius: .3rem;
+    font-weight: 800;
+}
+
+
+
+.notification{
+    margin-bottom: 1em;
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    padding: 1em;
+    gap: 1em;
+}
+.notification__photo img{
+    width: 3rem;
+}
+.unread{
+    background-color: var(--greyblue-100);
+}
+.red-dot{
+    display: inline;
+    min-width: .6rem;
+    height: .6rem;
+    background-color: red;
+    border-radius: 50%;
+}
+.notification__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.notification__content div{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+/* for your post */
+.notification__content + .notification__picture{
+    margin-left: 2em;
+    justify-self: flex-end;
+}
+
+
+
+.message{
+    border: .5px solid var(--gray-200);
+    border-radius: .2rem;
+    padding: 1.5em 1em;
+    color: var(--gray-400);
+    margin-top: 1em;
+}
+
+.message:hover, .message:focus{
+    background-color: var(--greyblue-200);
+    cursor: pointer;
+}
+
+
+@media (min-width: 900px){
+    .container{
+        width: 75%;
+        margin: 10% auto;
+        max-width: 700px;
+    }
+}
